@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<!–– NP desc. here ––>
+<div class="w3-container w3-pale-blue">
+	
+	<h3>Donate</h3>
+	<p>Your support can improve the quality of life for people with lupus through research, education and advocacy. Help us continue to lead the way and have the greatest impact on people’s lives in the shortest amount of time.</p>
+	
+</div>
+	
+<!–– nav bar ––>
+<div class="w3-bar w3-grey">
+  <button class="w3-bar-item w3-button" onclick="openCoin('Bitcoin')">Bitcoin</button>
+  <button class="w3-bar-item w3-button" onclick="openCoin('Ethereum')">Etherium</button>
+  <button class="w3-bar-item w3-button" onclick="openCoin('Litecoin')">Litecoin</button>
+</div>
+
+
+<!–– BTC ––>	
+<div id="Bitcoin" class="w3-container city w3-padding-16">
+  <div class="w3-display-container w3-padding-16" style="height:100px;">
+	  <div class="w3-display-topmiddle"><p>Scan the QR code or copy the address into your wallet to donate Bitcoin:
+		 		 
+	<input class="ant-input" id="invoice-payment_request-input1" readonly="" type="text" value="lnbc5m1pwjfe6npp5gwe5hh55pkay9y6dt5pvz2lavxcxalyadtjpa837crvwqnr6l96qdp9gdhkjmj8v96x2gz0wfjx2u3qyv6rydpkxucrycqzpgxqrp9wwr4475afh5w9u28t2kgm77lsmmgnrwpz8uy6he8lkklnx7nkkk43v47sfunsu2cx0jkyqmdqa9ussf8n95apsza0rfe6cnc8aardczsqwyte8f"> </p></div>
+	  
+ 
+	<div class="w3-display-topleft "> <img src="https://www.use.com/images/s_1/e4b6720e6f742d4035f3.jpg" width="100" height="100" alt=""/></div>	  
+</div>		
+</div>
+	
+	
+<div id="Ethereum" class="w3-container city w3-padding-16">
+  <div class="w3-display-container" style="height:100px;">
+	  <div class="w3-display-topmiddle"><p>Scan the QR code or copy the address into your wallet to donate Etherium:
+		 		 
+	<input class="ant-input" id="invoice-payment_request-input2" readonly="" type="text" value="lnbc5m1pwjfe6npp5gwe5hh55pkay9y6dt5pvz2lavxcxalyadtjpa837crvwqnr6l96qdp9gdhkjmj8v96x2gz0wfjx2u3qyv6rydpkxucrycqzpgxqrp9wwr4475afh5w9u28t2kgm77lsmmgnrwpz8uy6he8lkklnx7nkkk43v47sfunsu2cx0jkyqmdqa9ussf8n95apsza0rfe6cnc8aardczsqwyte8f"> </p></div>
+	  
+  
+
+	<div class="w3-display-topleft"> <img src="https://www.use.com/images/s_1/e4b6720e6f742d4035f3.jpg" width="100" height="100" alt=""/></div>
+</div>		
+</div>	
+<div id="Litecoin" class="w3-container city w3-padding-16">
+  <div class="w3-display-container" style="height:100px;">
+	  <div class="w3-display-topmiddle"><p>Scan the QR code or copy the address into your wallet to donate Litecoin:
+		 		 
+	<input class="ant-input" id="invoice-payment_request-input3" readonly="" type="text" value="lnbc5m1pwjfe6npp5gwe5hh55pkay9y6dt5pvz2lavxcxalyadtjpa837crvwqnr6l96qdp9gdhkjmj8v96x2gz0wfjx2u3qyv6rydpkxucrycqzpgxqrp9wwr4475afh5w9u28t2kgm77lsmmgnrwpz8uy6he8lkklnx7nkkk43v47sfunsu2cx0jkyqmdqa9ussf8n95apsza0rfe6cnc8aardczsqwyte8f"> </p></div>
+	  
+  
+
+	<div class="w3-display-topleft"> <img src="https://www.use.com/images/s_1/e4b6720e6f742d4035f3.jpg" width="100" height="100" alt=""/></div>
+</div>		
+</div>
+	
+<script>
+function openCoin(coinName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(coinName).style.display = "block"; 
+	 tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+	document.getElementById(coinName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+
+<div class="w3-display-container" style="height:100px;">	
+	<footer>
+		Powered by 
+		<img src="https://static.wixstatic.com/media/490f99_6c971e60d63e4acb85a51180ed670fae~mv2.png/v1/fill/w_256,h_66,al_c,q_80,usm_0.66_1.00_0.01/TGB%20Logo%20(Plain%2C%20Left).webp" width="100" img border="0"  height="25" alt=""/>
+</footer>
+	</div>
+	
+	
+
+</html>
